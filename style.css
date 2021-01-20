@@ -3,16 +3,14 @@ body {
   height: 100%;
 }
 
-body {
-  display: flex;
-  align-items: center;
+main {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .body-block {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   padding: 15px;
   margin: auto;
 }
