@@ -31,25 +31,25 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text">$</span>
                   </div>
-                  <input type="number" placeholder="Enter amount..." class="form-control" id="principal">
+                  <input type="number" placeholder="Enter amount..." class="form-control" id="principal" min=0 required>
                 </div>
               </div>
               <div class="row mb-1 justify-content-center align-items-center">
                 <div class="col-sm-3">Rate: </div>
                 <div class="col-sm-6">
-                  <input type="range" class="form-control-range" id="rate_slider" onchange="updateRatePct('slider')">
+                  <input type="range" class="form-control-range" id="rate_slider" value=15 onchange="updateRatePct('slider')" required>
                 </div>
                 <div class="col-sm-3 input-group input-group-sm">
                   <div class="input-group-prepend">
                     <span class="input-group-text">%</span>
                   </div>
-                  <input type="number" class="form-control" id="rate_box" onchange="updateRatePct('box')">
+                  <input type="number" class="form-control" id="rate_box" min=0 value=1.5 onchange="updateRatePct('box')" required>
                 </div>
               </div>
               <div class="row mb-3 justify-content-center align-items-center">
                 <div class="col-sm-3">No. of Years: </div>
                 <div class="col-sm-9">
-                  <select class="form-control" id="years">
+                  <select class="form-control" id="years" required>
                     <option value>Select...</option>
                     <option>1</option>
                     <option>2</option>
