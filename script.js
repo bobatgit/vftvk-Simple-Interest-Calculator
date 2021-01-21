@@ -1,7 +1,3 @@
-function isPositiveNumeric(value) {
-       return /^\d+$/.test(value);
-}
-
 function compute()
 {
     // Get the inputs
