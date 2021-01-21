@@ -15,9 +15,9 @@ function compute()
     years = parseFloat(years);
 
     // Check if everything is filled in
-    if(!isPositiveNumeric(principal) ||
-       !isPositiveNumeric(rate) ||
-       !isPositiveNumeric(years)){
+    if(isNaN(principal) ||
+       isNaN(rate) ||
+       isNaN(years)){
          console.log('Incorrect inputs.');
          return;
     }
@@ -34,6 +34,7 @@ function compute()
     document.getElementById("result_fv").innerHTML = "$" + fv.toFixed(1);
     present_year = new Date().getFullYear();
     document.getElementById("result_year").innerHTML = present_year + years;
+    return;
 
 }
 
@@ -50,7 +51,7 @@ function updateRatePct(called_by){
     // Default slider value ranges from 0 100.
   } else if (called_by == "box"){
     rate = box_object.value;
-    if(!isPositiveNumeric(rate)){
+    if(isNaN(rate) || rate < 0){
       rate = 0;
     }
   } else {
