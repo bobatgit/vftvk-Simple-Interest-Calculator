@@ -11,6 +11,7 @@
       <!-- Project specific CSS and JS. -->
       <script src="script.js"></script>
       <link rel="stylesheet" href="style.css">
+      <title>WebApp - Simple Interest Calculator</title>
     </head>
     <body class="background-dotted h-100 d-flex flex-column">
       <main class="">
@@ -37,7 +38,7 @@
               <div class="row mb-1 justify-content-center align-items-center">
                 <div class="col-sm-3">Rate: </div>
                 <div class="col-sm-6">
-                  <input type="range" class="form-control-range" id="rate_slider" value=15 onchange="updateRatePct('slider')" required>
+                  <input type="range" class="form-control-range" id="rate_slider" value=15 min=10 max=200 onchange="updateRatePct('slider')" required>
                 </div>
                 <div class="col-sm-3 input-group input-group-sm">
                   <div class="input-group-prepend">
